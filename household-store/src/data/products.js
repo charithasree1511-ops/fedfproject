@@ -1,0 +1,30 @@
+const products = [
+  { id: 1, name: "Steel Water Bottle", price: 299, category: "Kitchen", image: "https://nanonine.in/cdn/shop/products/Slimsteelblue1.jpg?v=1663164460" },
+  { id: 2, name: "Wooden Cutting Board", price: 499, category: "Kitchen", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwUs2eJVWRqtwDGtmwotxG5AREdvVrDZoDq5OIrTcsGQ&s" },
+  { id: 3, name: "Cotton Bedsheet Set", price: 899, category: "Bedroom", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkxZbG6XvUDlwWVrWnPILvFxI1PTAa-hzBAOgwMgdRyQ&s=10" },
+  { id: 4, name: "Microfiber Towel", price: 199, category: "Bathroom", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk6jsVkn9qvMYBDryUJBxTCUKM30mGQ6WKlrsaX13xbNdP4YuR9tSu3NY&s=10" },
+  { id: 5, name: "Non-Stick Pan", price: 749, category: "Kitchen", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7sQTiA_Tw6f1wFiTXLSqxsMqHtdzbOokEs8xD1XqPqQ&s=10" },
+  { id: 6, name: "LED Desk Lamp", price: 599, category: "Office", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRqsUUUTmkCJCw-dxNHj9EAznkdaKhlkS_fPoT7TYAFB5USIWhwFZ89qb0M0nylTEBX_G06K5VXFQbpkzC8T6-2R407YTzcmyrx7X3gqm4LNRq1sY4-vNaEb3FICdbzaTM-F6dyNw&usqp=CAc" },
+
+  { id: 7, name: "Plastic Storage Box", price: 399, category: "Bedroom", image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRatqxsQfmxL4F8J54HZxgG5fub8m-vsgoIn3JATcd5N8ZmrzYsNdJU2n1eZnQksWueU3h9SD_P-22F2GJAjWK_QVPdTZBqu32RJE6EFHsaVXRueRTaa9zKUXF7Q2kpgW-Ayb7s-v4&usqp=CAc" },
+  { id: 8, name: "Ceramic Coffee Mug", price: 249, category: "Kitchen", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTMIQv41wetmsCQqfcDmQU71Vu5mVd8kBKd4clUCfyMM0gIQOFpf7NFf2jmGEfIXbPDeMU6DYt_g6ShpqpidqyvrjyjFjjkejoGWJYFFQkiGp_RSRCrQsmA345dZUkDHw&usqp=CAc" },
+  { id: 9, name: "Wall Clock", price: 799, category: "Bedroom", image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTwoC0xbZBoc9Ao8TxicY-e8COSAjoafAIc8nxTcV8dcrFGezBfP5Z7pBJOQ23wuJ9quAhDk-Q0Y4ynzURUZCvIa4wE_nJuTg0FTwb3-d7tDhlcJIW2E1BL&usqp=CAc" },
+  { id: 10, name: "Laundry Basket", price: 349, category: "Bathroom", image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR1UQTVyKBh09qVZ1zGzvn2xFW7L1Dh48v6t4HtiUA3PpMDHOHPt4S5nsD6JKmlSe0S8z78oMpHdvQND8-fHc0LIO8B4o1feZLwyofj1Inb1POSLBM2Pv1-Z0bfq1o1Qiu4IlGYHtY&usqp=CAc" },
+  { id: 11, name: "Floor Cleaning Mop", price: 599, category: "Bathroom", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQwbQ4tEBupzPinufofM_f5X99bZLZqJ5wIkemsEY1IdVrwzn5R8g47DXXIyKxWU8PgwTLvuO88XRiB1dIWcdYQJdIeKT5FLej2OteC2ipCOoenedw5BM8ggNjA5PWI&usqp=CAc" },
+  { id: 12, name: "Kitchen Knife Set", price: 899, category: "Kitchen", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSBIrrVB6JRHNBv8q0WA8ZRfWwY7Zptqq_w3wYwHXMWHI0sVjySfp6Ta317_sheN3It06GSndhIUbV4p0t_PddPKrmBPRl_opKkCu56Kig_kQiGLIbnEM-J6g&usqp=CAc" },
+  { id: 13, name: "Office Chair", price: 3499, category: "Office", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSrhD_wiFtqjeK2QPXsOsw0Iv5OukAXOk3IMDrzdy67GMlkhDGxodRsSzZpUcUy5UhOcIv9uQo5JLR6O7l5CYPbV5NlS59EvkWjCzW2yLM&usqp=CAc" },
+  { id: 14, name: "Notebook Organizer", price: 299, category: "Office", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtkQiAX2dwfqg3CYW0rPqDFHINYTOea7Hiqe7Y8APy6g&s=10" },
+  { id: 15, name: "Pillow Set", price: 699, category: "Bedroom", image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS8wmHvyf5vEBXLU4XBYoC_Dyj2flLWzIoN_iMn57sBI72OMajoWiX9OPDs7Dae1z557rppTR7oU_gj-sPsKqLk_otvdEuUUyydceZFmscx17u4to17qyq1PrU-3Ila&usqp=CAc" },
+  { id: 16, name: "Curtain Set", price: 1199, category: "Bedroom", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRze8ueCKyi4K-PUz6N2xnCLVmt32oEZvJxbTefkKS96oeNSUdRx8ByWt0lV6DLOx5AV7SwRBy1CPFJ4ru3bs93H1mbTqslVl6rd-g78u-bWseMiOLsy7mZpm0ukEC5&usqp=CAc" },
+  { id: 17, name: "Soap Dispenser", price: 299, category: "Bathroom", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_okhrRROHec-yRrn788hG6OEl4EDPAl9jBXyUUmriw&s=10" },
+  { id: 18, name: "Electric Kettle", price: 1499, category: "Kitchen", image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT3Wmr6GvQan4sG3kYY0myf1ZlyrtlJqXQA4oAPBOaBQugmqoOWVbCENFohxbpDUvJ3vMha6j38LOoDw_W65xNWNlCYRFcrdkpSMEsYMBZzNvpOdp8i_AJF&usqp=CAc" },
+  { id: 19, name: "Study Table", price: 4999, category: "Office", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQZU_ynoEm3LbobQu6BxCuVR8gtO55UWwUSjnKwnwyTwr90oHiZ3H8-egaVsZQ3Dt26CgfgRL67maSqN28pk7Z7O3Ky2_k1my3vE7SD6F7mnWoFLxYh0Z9yGBS07NPuDQ&usqp=CAc" },
+  { id: 20, name: "Bath Mat", price: 399, category: "Bathroom", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRy78sk1PhcefG3XwjzZqqrNRGexk2PsBRGxeOOfZW2pF5LI_17MFHR3qoXEuN6V25VqUlMyUJP6RyzOlao4-eMWMHXSJoth2HUvRtYZilP&usqp=CAc" },
+  { id: 21, name: "Spice Rack", price: 549, category: "Kitchen", image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTGs2mvWaWGXi__g3yjnCXs2L98iayFs7HyWnmNfPm_0nThBBMTHC-GTp7bd4Cs9-zEFCmkSnDpM-hlMz8wzszbCJ77pEqhkAwAcIjephzk5P3fCLT5t-qrIU491ymx&usqp=CAc" },
+  { id: 22, name: "Blanket", price: 1299, category: "Bedroom", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2z6Uy_XTTihBpyjE_PSsi072_0fAbM7ZHWoUwLe-W7g&s=10" },
+  { id: 23, name: "Desk Organizer", price: 399, category: "Office", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSAQTVGxfgjX06skf0oS8DktEZt5fpCDHaGxxy-XSW9Pzk_moxFi8A3Sd5DZRl3Rf4e2jJQT9QEo4mTh-wvx22960dSW2KRf6UDclUMU9PO2ASiom4NaillIpzOPtCWZA&usqp=CAc" },
+  { id: 24, name: "Mirror", price: 999, category: "Bathroom", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVrOmD-bQa4SxsSx3zY7Pj5NY0hrTnvAIL3YIg1U6bw&s=10" },
+  { id: 25, name: "Rice Storage Container", price: 699, category: "Kitchen", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH0WP1tP_5wRjxOOsC1VKhPRWlfN1YRMIFsmMm1UkjmQ&s=10" }
+];
+
+export default products;
